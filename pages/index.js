@@ -75,7 +75,8 @@ export default function Home2() {
         <div className={styles.grid}>
           {
             links.map((item) => (
-              <a target="_blank" href={`${searchEngine}${item.querySlug} ${query}`} className={styles.card}>
+              <a key={item.title} className={styles.card} target="_blank"  rel="noreferrer" 
+                href={`${searchEngine}${item.querySlug} ${query}`}>
                 <h2>{item.title} &rarr;</h2>
                 <p>{`${searchEngine}${item.querySlug} ${query}`}</p>
               </a>    
