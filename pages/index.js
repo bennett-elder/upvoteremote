@@ -1,8 +1,54 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { useState, Link } from "react"
 
-export default function Home() {
+export default function Home2() {
+  const [query, setQuery] = useState("remote developer relations")
+  const [searchEngine, setSearchEngine] = useState("https://duckduckgo.com/?q=")
+
+  const links = [
+    {
+      "title": "Breezy",
+      "querySlug": "site%3Abreezy.hr"
+    },
+    {
+      "title": "Lever",
+      "querySlug": "site%3Alever.co"
+    },
+    {
+      "title": "Applicant Pro",
+      "querySlug": "site%3Aapplicantpro.com"
+    },
+    {
+      "title": "Jobvite",
+      "querySlug": "site%3Ajobvite.com"
+    },
+    {
+      "title": "Applicant Stack",
+      "querySlug": "site%3Aapplicantstack.com"
+    },
+    {
+      "title": "Greenhouse",
+      "querySlug": "site%3Agreenhouse.io"
+    },
+    {
+      "title": "iCIMS",
+      "querySlug": "site%3Aicims.com"
+    },
+    {
+      "title": "Careers URL",
+      "querySlug": "inurl%3Acareers"
+    }
+  ];
+
+  // https://duckduckgo.com/?q=
+  // https://www.google.com/search?q=
+
+  const updateQuery = (event) => {
+    setQuery(event.target.value);
+  };
+
   return (
     <div className={styles.container}>
       <Head>
@@ -13,55 +59,38 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Upvote Remote
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          Get started searching for remote jobs using search dorks
+        </p>
+
+        <p>
+          <label className={styles.searchFilter} for="searchFilter">Search filter:</label>&nbsp;
+          <input className={styles.searchFilter} id="searchFilter" size="30"
+            onChange={ updateQuery } value={query} placeholder="remote developer relations" />
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          {
+            links.map((item) => (
+              <a target="_blank" href={`${searchEngine}${item.querySlug} ${query}`} className={styles.card}>
+                <h2>{item.title} &rarr;</h2>
+                <p>{`${searchEngine}${item.querySlug} ${query}`}</p>
+              </a>    
+            ))
+          }
         </div>
       </main>
 
       <footer className={styles.footer}>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://twitter.com/BennettElder/status/1332233991995469824?s=20"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
+          Powered by this Twitter thread: https://twitter.com/BennettElder/status/1332233991995469824
         </a>
       </footer>
     </div>
