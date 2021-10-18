@@ -94,7 +94,7 @@ export default function Home2() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by this Twitter thread: https://twitter.com/BennettElder/status/1332233991995469824
+          Powered by this Twitter thread.
         </a>
       </footer>
     </div>
