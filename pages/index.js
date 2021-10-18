@@ -55,6 +55,9 @@ export default function Home2() {
         <title>Upvote Remote - Get started searching for remote jobs using search dorks</title>
         <meta name="description" content="Get started searching for remote jobs using search dorks." />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" /> 
       </Head>
 
       <main className={styles.main}>
