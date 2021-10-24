@@ -37,6 +37,10 @@ export default function Home2() {
       "querySlug": "site%3Aicims.com"
     },
     {
+      "title": "Workday",
+      "querySlug": "site%3Amyworkdayjobs.com"
+    },
+    {
       "title": "Careers URL",
       "querySlug": "inurl%3Acareers"
     }
