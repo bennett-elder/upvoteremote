@@ -48,6 +48,7 @@ export default function Home2() {
 
   // https://duckduckgo.com/?q=
   // https://www.google.com/search?q=
+  // https://www.bing.com/search?q=
 
   const updateQuery = (event) => {
     setQuery(event.target.value);
