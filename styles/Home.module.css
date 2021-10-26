@@ -84,6 +84,21 @@ input.searchFilter {
   padding: 10px;
 }
 
+button.searchFilterTitle {
+  padding: 5px;
+  border-style: dotted;
+  border-radius: 10px;
+  margin: 10px;
+  font-size: 1.7rem;
+}
+
+button.searchEngine {
+  padding: 5px;
+  border-radius: 10px;
+  margin: 10px;
+  font-size: 1.7rem;
+}
+
 .grid {
   display: flex;
   align-items: center;
