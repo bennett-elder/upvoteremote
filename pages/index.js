@@ -41,6 +41,14 @@ export default function Home2() {
       "querySlug": "site%3Amyworkdayjobs.com"
     },
     {
+      "title": "SmartRecruiters",
+      "querySlug": "site%3Ajobs.smartrecruiters.com"
+    },
+    {
+      "title": "Taleo",
+      "querySlug": "site%3Ataleo.net"
+    },
+    {
       "title": "Careers URL",
       "querySlug": "inurl%3Acareers"
     }
