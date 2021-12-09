@@ -49,6 +49,10 @@ export default function Home2() {
       "querySlug": "site%3Ataleo.net"
     },
     {
+      "title": "Ultipro",
+      "querySlug": "site%3Arecruiting.ultipro.com"
+    },    
+    {
       "title": "Careers URL",
       "querySlug": "inurl%3Acareers"
     }
