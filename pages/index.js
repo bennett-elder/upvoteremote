@@ -4,8 +4,8 @@ import styles from '../styles/Home.module.css'
 import { useState, Link } from "react"
 
 export default function Home2() {
-  const [query, setQuery] = useState("remote developer relations")
-  const [searchEngine, setSearchEngine] = useState("https://duckduckgo.com/?q=")
+  const [query, setQuery] = useState("product manager")
+  const [searchEngine, setSearchEngine] = useState("https://duckduckgo.com/?q=remote+")
 
   const links = [
     {
@@ -67,11 +67,15 @@ export default function Home2() {
   };
 
   const setToDuck = (event) => {
-    setSearchEngine("https://duckduckgo.com/?q=")
+    setSearchEngine("https://duckduckgo.com/?q=remote+")
   }
   
   const setToBing = (event) => {
-    setSearchEngine("https://www.bing.com/search?q=")
+    setSearchEngine("https://www.bing.com/search?q=remote+")
+  }
+
+  const setToGoogle = (event) => {
+    setSearchEngine("https://www.google.com/search?q=remote+")
   }
 
   const setFilterValue = (event) => {
@@ -91,28 +95,31 @@ export default function Home2() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Upvote Remote
+          Work remotely.<br />Get paid.
         </h1>
 
         <p className={styles.description}>
-          Get started searching for remote jobs using search dorks
+          Throw away mainstream job boards that make you just another number.<br /><br />Find the long tail of remote jobs and apply directly with hidden gems using this one neat trick.
         </p>
 
-        <p>
-          <label className={styles.searchFilter} htmlFor="searchFilter">Search filter:</label>&nbsp;
+        <p className={styles.searchFilterSection}>
+          <label className={styles.searchFilter} htmlFor="searchFilter">What do you want to do?</label>&nbsp;
           <input className={styles.searchFilter} id="searchFilter" size="30"
-            onChange={ updateQuery } value={query} placeholder="remote developer relations" />
+            onChange={ updateQuery } value={query} placeholder="something something cloud" />
         </p>
 
-        <p>
-          <button className={styles.searchFilterTitle} onClick={ setFilterValue } value='remote developer relations'>remote developer relations</button>
-          <button className={styles.searchFilterTitle} onClick={ setFilterValue } value='remote devops engineer'>remote devops engineer</button>
-          <button className={styles.searchFilterTitle} onClick={ setFilterValue } value='remote product manager'>remote product manager</button>
+        <p className={styles.someIdeas}>
+          Some ideas to tap:<br />
+          <button className={styles.searchFilterTitle} onClick={ setFilterValue } value='developer relations'>developer relations</button>
+          <button className={styles.searchFilterTitle} onClick={ setFilterValue } value='devops engineer'>devops engineer</button>
+          <button className={styles.searchFilterTitle} onClick={ setFilterValue } value='software developer'>software developer</button>
+          <button className={styles.searchFilterTitle} onClick={ setFilterValue } value='cloud engineer'>cloud engineer</button>
+          <button className={styles.searchFilterTitle} onClick={ setFilterValue } value='product manager'>product manager</button>
+          <button className={styles.searchFilterTitle} onClick={ setFilterValue } value='project manager'>project manager</button>
         </p>
 
-        <p>
-          <button className={styles.searchEngine} onClick={ setToDuck }>Use Duck</button>
-          <button className={styles.searchEngine} onClick={ setToBing }>Use Bing</button>
+        <p className={styles.boardPossibilities}>
+          Follow these links to find matching jobs:
         </p>
 
         <div className={styles.grid}>
@@ -126,6 +133,13 @@ export default function Home2() {
             ))
           }
         </div>
+
+        <p className={styles.preferredSearchEngine}>
+          Have a search engine preference?<br />
+          <button className={styles.searchEngine} onClick={ setToDuck }>Use Duck</button>
+          <button className={styles.searchEngine} onClick={ setToBing }>Use Bing</button>
+          <button className={styles.searchEngine} onClick={ setToGoogle }>Use Google</button>
+        </p>        
       </main>
 
       <footer className={styles.footer}>
@@ -135,6 +149,20 @@ export default function Home2() {
           rel="noopener noreferrer"
         >
           Powered by this Twitter thread.
+        </a>
+        <a
+          href="https://github.com/bennett-elder/upvoteremote/issues"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Ideas and contributions welcome.
+        </a>
+        <a
+          href="https://ko-fi.com/upvoteremote"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Coffee welcome.
         </a>
       </footer>
     </div>
