@@ -41,6 +41,10 @@ export default function Home2() {
       "querySlug": "site%3Amyworkdayjobs.com"
     },
     {
+      "title": "Workable",
+      "querySlug": "site%3Aworkable.com"
+    },
+    {
       "title": "SmartRecruiters",
       "querySlug": "site%3Ajobs.smartrecruiters.com"
     },
