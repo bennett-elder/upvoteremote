@@ -55,7 +55,11 @@ export default function Home2() {
     {
       "title": "Ultipro",
       "querySlug": "site%3Arecruiting.ultipro.com"
-    },    
+    },
+    {
+      "title": "BambooHR",
+      "querySlug": "site%3Abamboohr.com -www.bamboohr.com"
+    },
     {
       "title": "Careers URL",
       "querySlug": "inurl%3Acareers"
