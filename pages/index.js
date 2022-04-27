@@ -58,7 +58,7 @@ export default function Home2() {
     },
     {
       "title": "BambooHR",
-      "querySlug": "site%3Abamboohr.com"
+      "querySlug": "site%3Abamboohr.com -www.bamboohr.com"
     },
     {
       "title": "Careers URL",
