@@ -65,6 +65,10 @@ export default function Home2() {
       "querySlug": "site%3Arecruitee.com"
     },
     {
+      "title": "ApplyToJob",
+      "querySlug": "site%3Aapplytojob.com"
+    },
+    {
       "title": "Careers URL",
       "querySlug": "inurl%3Acareers"
     }
