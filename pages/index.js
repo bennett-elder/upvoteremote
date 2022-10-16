@@ -61,6 +61,10 @@ export default function Home2() {
       "querySlug": "site%3Abamboohr.com -www.bamboohr.com"
     },
     {
+      "title": "Recruitee",
+      "querySlug": "site%3Arecruitee.com"
+    },
+    {
       "title": "Careers URL",
       "querySlug": "inurl%3Acareers"
     }
