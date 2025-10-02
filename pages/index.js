@@ -160,13 +160,6 @@ export default function Home2() {
 
       <footer className={styles.footer}>
         <a
-          href="https://twitter.com/BennettElder/status/1332233991995469824?s=20"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by this Twitter thread.
-        </a>
-        <a
           href="https://github.com/bennett-elder/upvoteremote/issues"
           target="_blank"
           rel="noopener noreferrer"
