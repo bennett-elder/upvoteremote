@@ -13,9 +13,6 @@ utilizing different **search engines** to find the best results.
 ## Url:
 [Find a job on Upvote Remote](https://www.upvoteremote.com)
 
-## How:
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Contribute:
 Like it? Add an issue or a PR.
 
